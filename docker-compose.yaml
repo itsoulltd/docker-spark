@@ -1,0 +1,19 @@
+version: '3.5'
+
+networks:
+  spark-net:
+    name: my-spark-net
+    driver: bridge
+
+services:
+  miniconda:
+    container_name: 'jupyter_lab_spark'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8888:8888
+    volumes:
+      - ./data:/home
+
+#End-Of-Scripts
