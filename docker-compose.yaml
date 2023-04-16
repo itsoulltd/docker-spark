@@ -6,7 +6,7 @@ networks:
     driver: bridge
 
 services:
-  apache-spark:
+  jupyterlab:
     container_name: 'jupyter_lab_spark'
     build:
       context: .
