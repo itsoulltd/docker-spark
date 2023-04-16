@@ -6,7 +6,7 @@ networks:
     driver: bridge
 
 services:
-  miniconda:
+  apache-spark:
     container_name: 'jupyter_lab_spark'
     build:
       context: .
