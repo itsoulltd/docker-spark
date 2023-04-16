@@ -6,7 +6,7 @@ WORKDIR /opt/spark
 
 RUN pip install --upgrade pip
 
-COPY  dependencies.txt .
+COPY dependencies.txt .
 RUN pip3 install -r dependencies.txt
 
 CMD jupyter-lab --allow-root --no-browser --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token='' --NotebookApp.password=''
