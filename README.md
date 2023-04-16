@@ -1,5 +1,6 @@
 ### How to
     
+    ~>$ mkdir .home
     ~>$ open -a Docker
     ~>$ docker-compose up -d
    

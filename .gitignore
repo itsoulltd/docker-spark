@@ -30,5 +30,6 @@
 /nbdist/
 /.nb-gradle/
 
-### spark-related files ###
+### project-related-files ###
+*.home
 **/sparkuser/
