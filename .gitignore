@@ -31,5 +31,4 @@
 /.nb-gradle/
 
 ### project-related-files ###
-*.home
-**/sparkuser/
+*.notebooks

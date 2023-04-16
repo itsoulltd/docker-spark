@@ -5,6 +5,9 @@ networks:
     name: my-spark-net
     driver: bridge
 
+volumes:
+  vol-sparkuser:
+
 services:
   jupyterlab:
     container_name: 'jupyter_lab_spark'
@@ -14,6 +17,7 @@ services:
     ports:
       - 8888:8888
     volumes:
-      - ./.home:/home
+      - vol-sparkuser:/home
+      - ./.notebooks:/opt/spark/notebooks
 
 #End-Of-Scripts

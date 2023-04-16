@@ -1,6 +1,6 @@
 ### How to
     
-    ~>$ mkdir .home
+    ~>$ mkdir .notebooks
     ~>$ open -a Docker
     ~>$ docker-compose up -d
    
